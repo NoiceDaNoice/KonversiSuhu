@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/awal"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="enter number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toStartOf="@+id/btn"
+        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginBottom="62dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/celcius"
+        app:layout_constraintEnd_toEndOf="@+id/celcius"
+        app:layout_constraintStart_toStartOf="@+id/fahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/awal" />
+
+    <EditText
+        android:id="@+id/celcius"
+        android:hint="celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/reamur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+    <EditText
+        android:id="@+id/reamur"
+        android:hint="reamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fahrenheit"
+        app:layout_constraintStart_toStartOf="@+id/celcius"
+        app:layout_constraintTop_toBottomOf="@+id/celcius" />
+
+    <EditText
+        android:id="@+id/fahrenheit"
+        android:hint="fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/kelvin"
+        app:layout_constraintStart_toStartOf="@+id/reamur"
+        app:layout_constraintTop_toBottomOf="@+id/reamur" />
+
+    <EditText
+        android:id="@+id/kelvin"
+        android:hint="kelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="99dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/fahrenheit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
